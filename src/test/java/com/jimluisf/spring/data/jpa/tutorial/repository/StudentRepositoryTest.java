@@ -101,6 +101,13 @@ class StudentRepositoryTest
     }
 
     @Test
+    public void getStudentByEmailAddressNativeNameParam()
+    {
+        Student student = studentRepository.getStudentByEmailAddressNativeNameParam("luis@gmail.com");
+        System.out.println("student = " + student);
+    }
+
+    @Test
     public void dropStudentTable()
     {
         studentRepository.deleteAll();
