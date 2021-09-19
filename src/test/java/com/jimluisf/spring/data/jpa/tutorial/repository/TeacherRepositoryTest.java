@@ -33,7 +33,7 @@ class TeacherRepositoryTest {
         Teacher teacher = Teacher.builder()
                 .firstName("Joe")
                 .lastName("Doe")
-                .courses(Arrays.asList(courseDba, courseJava))
+//                .courses(Arrays.asList(courseDba, courseJava))
                 .build();
 
         teacherRepository.save(teacher);

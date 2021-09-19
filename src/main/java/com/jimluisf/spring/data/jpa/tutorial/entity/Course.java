@@ -32,4 +32,13 @@ public class Course
             mappedBy = "course" // This is only telling that the OneToOne mapping is being done already in the CourseMaterial class by the course attribute
     )
     private CourseMaterial courseMaterial;
+
+    @ManyToOne(
+        cascade = CascadeType.ALL
+    )
+    @JoinColumn(
+            name = "teacher_id",
+            referencedColumnName = "teacherId"
+    )
+    private Teacher teacher;
 }
