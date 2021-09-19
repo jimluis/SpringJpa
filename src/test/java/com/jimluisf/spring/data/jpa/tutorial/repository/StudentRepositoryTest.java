@@ -108,6 +108,13 @@ class StudentRepositoryTest
     }
 
     @Test
+    public void updateStudentNameByEmailId()
+    {
+        int transId = studentRepository.updateStudentNameByEmailId("luis2", "luis@gmail.com");
+        System.out.println("transId = " + transId);
+    }
+
+    @Test
     public void dropStudentTable()
     {
         studentRepository.deleteAll();
