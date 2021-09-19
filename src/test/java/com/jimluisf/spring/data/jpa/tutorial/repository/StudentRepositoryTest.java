@@ -87,6 +87,13 @@ class StudentRepositoryTest
     }
 
     @Test
+    public void getStudentByEmailAddress()
+    {
+        Student student = studentRepository.getStudentByEmailAddress("luis@gmail.com");
+        System.out.println("student = " + student);
+    }
+
+    @Test
     public void dropStudentTable()
     {
         studentRepository.deleteAll();
