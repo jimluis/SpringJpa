@@ -25,7 +25,7 @@ class CourseMaterialRepositoryTest
                 .build();
 
         CourseMaterial courseMaterial = CourseMaterial.builder()
-                        .url("www.google.com")
+                        .url("www.jimluisf.com")
                         .course(course)
                         .build();
 
